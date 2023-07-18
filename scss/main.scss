@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card{
+    background-color: aqua;
+    grid-area: card;
+}
+.card1{
+    background-color: green;
+    grid-area: card1;
+}
+.card2{
+    background-color: gray;
+    grid-area: card2;
+}
+.card3{
+    background-color: aquamarine;
+    grid-area: card3;
+}
+.card4{
+    background-color: blue;
+    grid-area: card4;
+}
+.card5{
+    background-color: rosybrown;
+    grid-area: card5;
+}
+.card6{
+    background-color: wheat;
+    grid-area: card6;
+}
+.card7{
+    background-color: khaki;
+    grid-area: card7;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.main{
+    display: grid;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    grid-template-areas: 
+    "card card card card1 card1 card1 card1 card2 card2 card2"
+    "card card card card1 card1 card1 card1 card2 card2 card2"
+    "card card card card1 card1 card1 card1 card2 card2 card2"
+    "card card card card1 card1 card1 card1 card2 card2 card2"
+    "card card card card4 card4 card4 card4 card2 card2 card2"
+    "card card card card4 card4 card4 card4 card2 card2 card2"
+    "card card card card4 card4 card4 card4 card2 card2 card2"
+    "card card card card4 card4 card4 card4 card2 card2 card2"
+    "card card card card4 card4 card4 card4 card5 card5 card5"
+    "card card card card4 card4 card4 card4 card5 card5 card5"
+    "card3 card3 card3 card4 card4 card4 card4 card5 card5 card5"
+    "card3 card3 card3 card4 card4 card4 card4 card5 card5 card5"
+    "card3 card3 card3 card6 card6 card6 card6 card5 card5 card5"
+    "card3 card3 card3 card6 card6 card6 card6 card5 card5 card5"
+    "card3 card3 card3 card6 card6 card6 card6 card7 card7 card7"
+    "card3 card3 card3 card6 card6 card6 card6 card7 card7 card7"
+    "card3 card3 card3 card6 card6 card6 card6 card7 card7 card7"
+    "card3 card3 card3 card6 card6 card6 card6 card7 card7 card7"
+    "card3 card3 card3 card6 card6 card6 card6 card7 card7 card7"
+    "card3 card3 card3 card6 card6 card6 card6 card7 card7 card7"    
+    ;
+    gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
